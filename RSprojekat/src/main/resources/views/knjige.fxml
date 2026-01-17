@@ -15,16 +15,16 @@
          </font></Label>
        <TextField fx:id="txtSearch" layoutX="200.0" layoutY="59.0" prefHeight="34.0" prefWidth="467.0" promptText="Pretraži knjige" />
 
-       <TableView fx:id="tblKnjige" layoutX="200.0" layoutY="109.0" prefHeight="423.0" prefWidth="786.0">
+       <TableView fx:id="tblKnjige" layoutX="200.0" layoutY="109.0" prefHeight="423.0" prefWidth="783.0">
         <columns>
           <TableColumn fx:id="clNaziv" prefWidth="178.1999969482422" text="Naziv" />
           <TableColumn fx:id="clAutor" minWidth="7.199981689453125" prefWidth="152.5999755859375" text="Autor" />
             <TableColumn fx:id="clZanr" minWidth="3.20001220703125" prefWidth="101.0" text="Žanr" />
             <TableColumn fx:id="clIzdavac" minWidth="4.20001220703125" prefWidth="111.0" text="Izdavač" />
             <TableColumn fx:id="clGodina" prefWidth="70.4000244140625" text="Godina" />
-            <TableColumn fx:id="clStatus" minWidth="0.0" prefWidth="103.79998779296875" text="Status" />
-            <TableColumn fx:id="clEdit" minWidth="0.0" prefWidth="32.0" />
-            <TableColumn fx:id="clDelete" minWidth="0.0" prefWidth="32.0" />
+            <TableColumn fx:id="clStatus" minWidth="0.0" prefWidth="95.0" text="Status" />
+            <TableColumn fx:id="clEdit" minWidth="0.0" prefWidth="35.5999755859375" />
+            <TableColumn fx:id="clDelete" minWidth="0.0" prefWidth="32.39990234375" />
         </columns>
       </TableView>
       <Label fx:id="lblDashboard" layoutX="32.0" layoutY="109.0" text="Dashboard" textFill="WHITE" />

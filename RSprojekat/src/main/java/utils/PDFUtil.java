@@ -48,7 +48,7 @@ public class PDFUtil {
                         !colText.equalsIgnoreCase("Delete") &&
                         !colText.equalsIgnoreCase("Vrati")) {
                     Object cellData = col.getCellData(item);
-                    html.append("<td>").append(cellData != null ? cellData.toString() : "").append("</td>");
+                    html.append("<td>").append(cellData != null ? escapeHtml(cellData.toString()) : "").append("</td>");
                 }
             }
             html.append("</tr>");
@@ -82,5 +82,21 @@ public class PDFUtil {
             alert.showAndWait();
         }
     }
+
+    private static String escapeHtml(String text) {
+        if (text == null) return "";
+        return text.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("'", "&apos;")
+                .replace("ć", "c")
+                .replace("č", "c")
+                .replace("đ", "dj")
+                .replace("dž", "dz")
+                .replace("ž", "z")
+                .replace("š", "s");
+    }
+
 
 }

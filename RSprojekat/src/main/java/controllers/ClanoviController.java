@@ -226,6 +226,6 @@ public class ClanoviController {
     // Export
     @FXML
     private void exportPDF() {
-        PDFUtil.exportTableToPDF(tblClanovi, "Članovi");
+        PDFUtil.exportTableToPDF(tblClanovi, "Clanovi");
     }
 }

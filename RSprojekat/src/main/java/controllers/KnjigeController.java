@@ -247,7 +247,8 @@ public class KnjigeController {
     }
 
     // Export
-    public void exportPDF(ActionEvent actionEvent) {
+    @FXML
+    public void exportPDF() {
         PDFUtil.exportTableToPDF(tblKnjige, "Knjige");
     }
 }
