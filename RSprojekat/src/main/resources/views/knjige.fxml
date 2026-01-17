@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.KnjigeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#406f9c" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="181.0" />
+      <Label layoutX="200.0" layoutY="33.0" text="Pregled knjiga">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+       <TextField fx:id="txtSearch" layoutX="200.0" layoutY="59.0" prefHeight="34.0" prefWidth="467.0" promptText="Pretraži knjige" />
+
+       <TableView fx:id="tblKnjige" layoutX="200.0" layoutY="109.0" prefHeight="423.0" prefWidth="786.0">
+        <columns>
+          <TableColumn fx:id="clNaziv" prefWidth="178.1999969482422" text="Naziv" />
+          <TableColumn fx:id="clAutor" minWidth="7.199981689453125" prefWidth="152.5999755859375" text="Autor" />
+            <TableColumn fx:id="clZanr" minWidth="3.20001220703125" prefWidth="101.0" text="Žanr" />
+            <TableColumn fx:id="clIzdavac" minWidth="4.20001220703125" prefWidth="111.0" text="Izdavač" />
+            <TableColumn fx:id="clGodina" prefWidth="70.4000244140625" text="Godina" />
+            <TableColumn fx:id="clStatus" minWidth="0.0" prefWidth="103.79998779296875" text="Status" />
+            <TableColumn fx:id="clEdit" minWidth="0.0" prefWidth="32.0" />
+            <TableColumn fx:id="clDelete" minWidth="0.0" prefWidth="32.0" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblDashboard" layoutX="32.0" layoutY="109.0" text="Dashboard" textFill="WHITE" />
+      <Label fx:id="lblKnjige" layoutX="32.0" layoutY="146.0" style="-fx-font-weight: bold;" text="Knjige" textFill="WHITE" />
+      <Label fx:id="lblClanovi" layoutX="32.0" layoutY="184.0" text="Članovi" textFill="WHITE" />
+      <Label fx:id="lblPosudbe" layoutX="32.0" layoutY="221.0" text="Posudbe" textFill="WHITE" />
+      <Button fx:id="btnDodajKnjigu" layoutX="837.0" layoutY="59.0" mnemonicParsing="false" onAction="#dodajKnjigu" prefHeight="34.0" prefWidth="149.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="DODAJ KNJIGU" />
+       <ImageView fx:id="imgRefresh" fitHeight="20.0" fitWidth="21.0" layoutX="631.0" layoutY="66.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnExport" layoutX="886.0" layoutY="542.0" mnemonicParsing="false" onAction="#exportPDF" prefHeight="26.0" prefWidth="99.0" style="-fx-border-color: #406f9c; -fx-border-radius: 8;" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Export u PDF" />
+      <ComboBox fx:id="cmbZanr" layoutX="684.0" layoutY="59.0" prefHeight="34.0" prefWidth="135.0" promptText="Odaberite žanr" style="-fx-background-color: #ffffff; -fx-border-color: #406f9c; -fx-background-radius: 8; -fx-border-radius: 8;" />
+
+
+   </children>
+</AnchorPane>

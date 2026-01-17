@@ -1,0 +1,20 @@
+.primary-button{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.primary-button:hover{
+    -fx-background-color: #c7e4ff;
+}
+.secondary-button{
+    -fx-background-color: #406f9c;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+}
+.secondary-button:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-border-radius: 8;
+    -fx-border-color: #406f9c99;
+}

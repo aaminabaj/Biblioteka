@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PosudbeController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#406f9c" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="181.0" />
+        <Label layoutX="200.0" layoutY="33.0" text="Pregled posudbi">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="txtSearch" layoutX="200.0" layoutY="59.0" prefHeight="34.0" prefWidth="467.0" promptText="Pretraži posudbe" />
+
+        <TableView fx:id="tblPosudbe" layoutX="200.0" layoutY="109.0" prefHeight="423.0" prefWidth="786.0">
+            <columns>
+                <TableColumn fx:id="clKnjiga" prefWidth="167.7999725341797" text="Knjiga" />
+                <TableColumn fx:id="clClan" minWidth="7.199981689453125" prefWidth="156.79998779296875" text="Član" />
+                <TableColumn fx:id="clPosudba" minWidth="3.20001220703125" prefWidth="165.0" text="Datum posudbe" />
+                <TableColumn fx:id="clVracanje" minWidth="4.20001220703125" prefWidth="148.7999267578125" text="Datum vraćanja" />
+                <TableColumn fx:id="clVrati" minWidth="0.0" prefWidth="138.4000244140625" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblDashboard" layoutX="32.0" layoutY="109.0" text="Dashboard" textFill="WHITE" />
+        <Label fx:id="lblKnjige" layoutX="32.0" layoutY="146.0" text="Knjige" textFill="WHITE" />
+        <Label fx:id="lblClanovi" layoutX="32.0" layoutY="184.0" text="Članovi" textFill="WHITE" />
+        <Label fx:id="lblPosudbe" layoutX="32.0" layoutY="221.0" style="-fx-font-weight: bold;" text="Posudbe" textFill="WHITE" />
+        <Button fx:id="btnDodajPosudbu" layoutX="837.0" layoutY="59.0" mnemonicParsing="false" onAction="#dodajPosudbu" prefHeight="34.0" prefWidth="149.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="DODAJ POSUDBU" />
+      <ImageView fx:id="imgRefresh" fitHeight="20.0" fitWidth="21.0" layoutX="631.0" layoutY="66.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="btnExport" layoutX="886.0" layoutY="542.0" mnemonicParsing="false" onAction="#exportPDF" prefHeight="26.0" prefWidth="99.0" style="-fx-border-color: #406f9c; -fx-border-radius: 8;" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Export u PDF" />
+        <ComboBox fx:id="cmbVrati" layoutX="684.0" layoutY="59.0" prefHeight="34.0" prefWidth="135.0" promptText="Odaberi posudbe" style="-fx-background-color: #ffffff; -fx-border-color: #406f9c; -fx-background-radius: 8; -fx-border-radius: 8;" />
+
+    </children>
+</AnchorPane>

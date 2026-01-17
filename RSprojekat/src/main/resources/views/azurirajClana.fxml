@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AzurirajClanaController">
+    <children>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#406f9c" height="459.0" layoutX="261.0" layoutY="70.0" stroke="TRANSPARENT" strokeType="INSIDE" width="478.0" />
+        <TextField fx:id="txtIme" layoutX="404.0" layoutY="151.0" prefHeight="34.0" prefWidth="290.0" promptText="Unesite ime" />
+        <TextField fx:id="txtPrezime" layoutX="404.0" layoutY="207.0" prefHeight="34.0" prefWidth="290.0" promptText="Unesite prezime" />
+        <TextField fx:id="txtBrojClanskeKarte" layoutX="404.0" layoutY="263.0" prefHeight="34.0" prefWidth="125.0" promptText="Unesite broj članske" />
+        <TextField fx:id="txtMail" layoutX="404.0" layoutY="321.0" prefHeight="34.0" prefWidth="290.0" promptText="Unesite mail adresu" />
+        <DatePicker fx:id="dtmDatumPridruzivanja" layoutX="404.0" layoutY="376.0" prefHeight="34.0" prefWidth="175.0" promptText="Odaberite datum" />
+        <Button fx:id="btnAzurirajClana" layoutX="454.0" layoutY="450.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="100.0" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Ažuriraj člana" />
+        <Label layoutX="289.0" layoutY="159.0" text="Ime" textFill="WHITE" />
+        <Label layoutX="288.0" layoutY="215.0" text="Prezime" textFill="WHITE" />
+        <Label layoutX="286.0" layoutY="271.0" text="Broj članske karte" textFill="WHITE" />
+        <Label layoutX="286.0" layoutY="329.0" text="Mail adresa" textFill="WHITE" />
+        <Label layoutX="286.0" layoutY="384.0" text="Datum pridruživanja" textFill="WHITE" />
+        <Label layoutX="446.0" layoutY="96.0" style="-fx-font-weight: bold;" text="AŽURIRANJE ČLANA" textFill="WHITE" />
+        <ImageView fx:id="imgBack" fitHeight="19.0" fitWidth="24.0" layoutX="274.0" layoutY="40.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+
+    </children>
+</AnchorPane>

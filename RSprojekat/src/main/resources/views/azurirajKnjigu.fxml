@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AzurirajKnjiguController">
+    <children>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#406f9c" height="459.0" layoutX="261.0" layoutY="70.0" stroke="TRANSPARENT" strokeType="INSIDE" width="478.0" />
+        <TextField fx:id="txtNaziv" layoutX="413.0" layoutY="147.0" prefHeight="34.0" prefWidth="274.0" promptText="Unesite naziv knjige" />
+        <TextField fx:id="txtAutor" layoutX="413.0" layoutY="201.0" prefHeight="34.0" prefWidth="274.0" promptText="Unesite autora" />
+        <TextField fx:id="txtIzdavac" layoutX="413.0" layoutY="320.0" prefHeight="34.0" prefWidth="274.0" promptText="Unesite izdavača" />
+        <TextField fx:id="txtGodinaIzdanja" layoutX="413.0" layoutY="380.0" prefHeight="34.0" prefWidth="153.0" promptText="Unesite godinu izdavanja" />
+        <ComboBox fx:id="cmbZanr" layoutX="413.0" layoutY="258.0" prefHeight="34.0" prefWidth="154.0" promptText="Odaberite žanr" />
+        <Button fx:id="btnAzurirajKnjigu" layoutX="450.0" layoutY="453.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="99.0" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Ažuriraj knjigu" />
+        <Label layoutX="295.0" layoutY="155.0" text="Naziv knjige" textFill="WHITE" />
+        <Label layoutX="297.0" layoutY="209.0" text="Autor" textFill="WHITE" />
+        <Label layoutX="297.0" layoutY="266.0" text="Žanr" textFill="WHITE" />
+        <Label layoutX="297.0" layoutY="328.0" text="Izdavač" textFill="WHITE" />
+        <Label layoutX="297.0" layoutY="388.0" text="Godina izdavanja" textFill="WHITE" />
+        <Label layoutX="441.0" layoutY="99.0" style="-fx-font-weight: bold;" text="AŽURIRANJE KNJIGE" textFill="WHITE" />
+        <ImageView fx:id="imgBack" fitHeight="19.0" fitWidth="24.0" layoutX="283.0" layoutY="41.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+
+    </children>
+</AnchorPane>

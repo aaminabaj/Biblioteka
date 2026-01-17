@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#406f9c" height="255.0" layoutX="307.0" layoutY="172.0" stroke="TRANSPARENT" strokeType="INSIDE" width="387.0" />
+        <TextField fx:id="txtUsername" layoutX="379.0" layoutY="229.0" prefHeight="31.0" prefWidth="242.0" promptText="Unesite username" />
+        <PasswordField fx:id="txtPassword" layoutX="379.0" layoutY="291.0" prefHeight="31.0" prefWidth="242.0" promptText="Unesite šifru" />
+        <Label layoutX="379.0" layoutY="212.0" text="Username" textFill="WHITE" />
+        <Label layoutX="379.0" layoutY="273.0" text="Šifra" textFill="WHITE" />
+        <Button fx:id="btnLogin" layoutX="458.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="31.0" prefWidth="84.0" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Prijava" textAlignment="CENTER" />
+        <Button fx:id="btnRegister" layoutX="379.0" layoutY="381.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: #406f9c;" text="Nemate račun - Registrujte se" textAlignment="CENTER" textFill="WHITE" />
+        <Label fx:id="lblError" layoutX="379.0" layoutY="420.0" style="-fx-text-fill: red;" />
+
+    </children>
+</AnchorPane>

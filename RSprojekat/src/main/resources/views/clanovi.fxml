@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClanoviController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#406f9c" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="181.0" />
+        <Label layoutX="200.0" layoutY="33.0" text="Pregled članova">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="txtSearch" layoutX="200.0" layoutY="59.0" prefHeight="34.0" prefWidth="620.0" promptText="Pretraži članove" />
+
+        <TableView fx:id="tblClanovi" layoutX="200.0" layoutY="109.0" prefHeight="423.0" prefWidth="786.0">
+            <columns>
+                <TableColumn fx:id="clBroj" prefWidth="109.39996337890625" text="Broj članske" />
+                <TableColumn fx:id="clIme" minWidth="7.199981689453125" prefWidth="112.4000244140625" text="Ime" />
+                <TableColumn fx:id="clPrezime" minWidth="3.20001220703125" prefWidth="136.99996948242188" text="Prezime" />
+                <TableColumn fx:id="clMail" minWidth="4.20001220703125" prefWidth="184.39996337890625" text="Mail adresa" />
+                <TableColumn fx:id="clDatum" prefWidth="165.5999755859375" text="Datum pridruživanja" />
+                <TableColumn fx:id="clEdit" minWidth="0.0" prefWidth="37.0" />
+                <TableColumn fx:id="clDelete" minWidth="0.0" prefWidth="31.4000244140625" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblDashboard" layoutX="32.0" layoutY="109.0" text="Dashboard" textFill="WHITE" />
+        <Label fx:id="lblKnjige" layoutX="32.0" layoutY="146.0" text="Knjige" textFill="WHITE" />
+        <Label fx:id="lblClanovi" layoutX="32.0" layoutY="184.0" style="-fx-font-weight: bold;" text="Članovi" textFill="WHITE" />
+        <Label fx:id="lblPosudbe" layoutX="32.0" layoutY="221.0" text="Posudbe" textFill="WHITE" />
+        <Button fx:id="btnDodajClana" layoutX="837.0" layoutY="59.0" mnemonicParsing="false" onAction="#dodajClana" prefHeight="34.0" prefWidth="149.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="DODAJ ČLANA" />
+        <ImageView fx:id="imgRefresh" fitHeight="20.0" fitWidth="21.0" layoutX="780.0" layoutY="66.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="btnExport" layoutX="886.0" layoutY="542.0" mnemonicParsing="false" onAction="#exportPDF" prefHeight="26.0" prefWidth="99.0" style="-fx-border-color: #406f9c; -fx-border-radius: 8;" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Export u PDF" />
+
+    </children>
+</AnchorPane>

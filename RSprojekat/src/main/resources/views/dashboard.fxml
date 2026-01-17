@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#406f9c" height="123.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1000.0" />
+      <Button fx:id="btnKnjige" layoutX="183.0" layoutY="289.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="157.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="UPRAVLJAJ KNJIGAMA" />
+      <Button fx:id="btnClanovi" layoutX="421.0" layoutY="289.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="157.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="UPRAVLJAJ ČLANOVIMA" />
+      <Button fx:id="btnPosudbe" layoutX="657.0" layoutY="289.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="157.0" styleClass="secondary-button" stylesheets="@../styles/stylesheet.css" text="UPRAVLJAJ POSUDBAMA" />
+      <Label layoutX="359.0" layoutY="45.0" text="Sistem za upravljanje bibliotekom" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="lblWelcome" layoutX="318.0" layoutY="145.0" prefHeight="20.0" prefWidth="363.0" style="-fx-alignment: center;" text="cccc">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnOdjava" layoutX="450.0" layoutY="402.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-border-color: #406f9c; -fx-border-radius: 8;" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Odjava" />
+   </children>
+</AnchorPane>

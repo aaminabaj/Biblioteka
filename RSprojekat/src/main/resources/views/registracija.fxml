@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistracijaController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#406f9c" height="387.0" layoutX="307.0" layoutY="106.0" stroke="TRANSPARENT" strokeType="INSIDE" width="387.0" />
+      <TextField fx:id="txtIme" layoutX="432.0" layoutY="170.0" prefHeight="31.0" prefWidth="221.0" promptText="Unesite ime" />
+      <TextField fx:id="txtPrezime" layoutX="432.0" layoutY="222.0" prefHeight="31.0" prefWidth="222.0" promptText="Unesite prezime" />
+      <TextField fx:id="txtUsername" layoutX="432.0" layoutY="275.0" prefHeight="31.0" prefWidth="222.0" promptText="Unesite username" />
+      <PasswordField fx:id="txtPasword" layoutX="432.0" layoutY="328.0" prefHeight="31.0" prefWidth="222.0" promptText="Unesite šifru" />
+      <PasswordField fx:id="txtPasword2" layoutX="431.0" layoutY="381.0" prefHeight="31.0" prefWidth="222.0" promptText="Ponovo unesite šifru" />
+      <Button fx:id="btnRegister" layoutX="458.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="31.0" prefWidth="85.0" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Registracija" />
+      <Label layoutX="340.0" layoutY="177.0" text="Ime" textFill="WHITE" />
+      <Label layoutX="339.0" layoutY="229.0" text="Prezime" textFill="WHITE" />
+      <Label layoutX="338.0" layoutY="282.0" text="Username" textFill="WHITE" />
+      <Label layoutX="338.0" layoutY="334.0" text="Šifra" textFill="WHITE" />
+      <Label layoutX="337.0" layoutY="388.0" text="Potvrda šifre" textFill="WHITE" />
+      <Label layoutX="459.0" layoutY="129.0" style="-fx-font-weight: bold;" text="REGISTRACIJA" textFill="WHITE" />
+       <ImageView fx:id="imgBack" fitHeight="19.0" fitWidth="24.0" layoutX="325.0" layoutY="78.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import org.controlsfx.control.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DodajPosudbuController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#406f9c" height="287.0" layoutX="337.0" layoutY="170.0" stroke="TRANSPARENT" strokeType="INSIDE" width="326.0" />
+       <SearchableComboBox fx:id="cmbClan" layoutX="367.0" layoutY="231.0" prefHeight="33.0" prefWidth="266.0" promptText="Odaberite člana" />
+      <SearchableComboBox fx:id="cmbKnjiga" layoutX="367.0" layoutY="286.0" prefHeight="33.0" prefWidth="266.0" promptText="Odaberite knjigu" />
+      <Button fx:id="btnPosudi" layoutX="468.0" layoutY="396.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="64.0" styleClass="primary-button" stylesheets="@../styles/stylesheet.css" text="Posudi" />
+      <DatePicker fx:id="dtmDatumPosudbe" layoutX="367.0" layoutY="336.0" prefHeight="34.0" prefWidth="175.0" promptText="Unesite datum posudbe" />
+      <ImageView fx:id="imgBack" fitHeight="19.0" fitWidth="24.0" layoutX="355.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="449.0" layoutY="191.0" style="-fx-font-weight: bold;" text="DODAJ POSUDBU" textFill="WHITE" />
+
+   </children>
+</AnchorPane>
